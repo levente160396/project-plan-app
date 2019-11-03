@@ -1,4 +1,4 @@
-package hu.projectplanapp.projectplancore;
+package hu.project.plan.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
