@@ -6,6 +6,8 @@ import org.springframework.stereotype.Repository;
 import hu.project.plan.app.domain.ProjectTask;
 
 @Repository
-public interface ProjectTastRepository extends CrudRepository<ProjectTask, Long>{
+public interface ProjectTaskRepository extends CrudRepository<ProjectTask, Long>{
 
+	Iterable<ProjectTask> findByProjectIdentifierOrderByPriority(String projectIdentifier);
+	
 }
